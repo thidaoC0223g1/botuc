@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
+
+<body>
+
+    <script>
+
+     function sum(arr){  // tổng các số chia hết cho 5
+        let x=0;
+        for(let i=0;i<arr.length;i++){
+            if(arr[i]%5===0){
+               x +=arr[i];
+            }
+        }return x;
+    }
+    document.write(sum([5,2,100,10,1]))
+   
+
+
+    function hienthi(arr){ //hiển thị phần tử chia hết cho 5
+       let  arr1=[]
+        for(let i=0; i<arr.length;i++){
+           if(arr[i]%5===0){
+               arr1.push(arr[i])
+           }
+        }return arr1;
+    }
+        document.write(hienthi([5,2,100,10,1]))
+
+
+
+    function replaceN(arr,n){ //thay phần tử đầu tiên trong mảng
+            arr[0]=n-1;
+     
+    }
+    
+    document.write(replaceN([2,4,5,8],100))
+
+    </script>
+</body>
+
+</html>
